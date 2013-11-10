@@ -28,7 +28,6 @@
 (evil-leader/set-key
   "e" 'find-file
   "b" 'switch-to-buffer
-  "k" 'kill-buffer
   "w" 'create-or-switch-window
   "x" 'er/expand-region
   "c" 'evilnc-comment-or-uncomment-lines)

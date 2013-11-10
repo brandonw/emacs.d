@@ -27,6 +27,7 @@
       uniquify-separator "/"
       uniquify-after-kill-buffer-p t
       uniquify-ignore-buffers-re "^\\*"
+      browse-url-browser-function 'browse-url-chromium
       x-select-enable-clipboard t
       x-select-enable-primary t
       mouse-yank-at-point t

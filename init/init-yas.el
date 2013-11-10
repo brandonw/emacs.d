@@ -10,10 +10,7 @@
 
 (require 'yasnippet)
 
-(setq yas-snippet-dirs
-      '("~/.emacs.d/snippets"
-        "~/.haskell-mode-snippets"
-        ))
+(add-to-list 'yas-snippet-dirs "~/.haskell-mode-snippets")
 (setq-default yas-prompt-functions '(yas-ido-prompt yas-dropdown-prompt))
 
 (yas-global-mode t)

@@ -18,6 +18,7 @@
 (require 'init-git)
 (require 'init-flyspell)
 (require 'init-flycheck)
+(require 'init-projectile)
 
 (provide 'init.el)
 ;;; init.el ends here

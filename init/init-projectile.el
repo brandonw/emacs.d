@@ -7,9 +7,9 @@
 
 (require 'projectile)
 
-(projectile-global-mode)
+(projectile-global-mode t)
 
-
+(evil-leader/set-key "f" 'projectile-find-file)
 
 (diminish 'projectile-mode)
 

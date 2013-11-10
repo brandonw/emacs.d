@@ -5,9 +5,11 @@
 
 (require-package 'haskell-mode)
 
-(eval-after-load 'haskell-mode
-  '(progn
-     ))
+(add-hook 'haskell-mode-hook 'haskell-mode-defaults)
+
+(defun haskell-mode-defaults ()
+  (turn-on-haskell-doc-mode)
+  (turn-on-haskell-indentation))
 
 (provide 'lang-haskell)
 ;;; lang-haskell.el ends here

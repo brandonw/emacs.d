@@ -12,7 +12,15 @@
 
 (defun haskell-mode-defaults ()
   (turn-on-haskell-doc-mode)
-  (turn-on-haskell-indentation))
+  (turn-on-haskell-indentation)
+  (evil-leader/set-key
+    "l" 'inferior-haskell-load-file
+    "r" 'inferior-haskell-reload-file
+    "s" 'switch-to-haskell
+    "i" 'inferior-haskell-info
+    "t" 'inferior-haskell-type
+    "d" 'inferior-haskell-find-definition
+    "h" 'inferior-haskell-find-haddock))
 
 (provide 'lang-haskell)
 ;;; lang-haskell.el ends here

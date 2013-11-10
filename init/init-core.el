@@ -16,7 +16,7 @@
 (show-paren-mode t)
 (turn-on-xclip)
 
-(global-set-key (kbd "RET") 'newline-and-indent)
+;(global-set-key (kbd "RET") 'newline-and-indent)
 
 (add-hook 'local-write-file-hooks
           (lambda ()

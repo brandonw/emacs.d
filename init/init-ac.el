@@ -9,6 +9,7 @@
 
 (ac-config-default)
 (ac-flyspell-workaround)
+(ac-linum-workaround)
 
 (defadvice ac-expand (before advice-for-ac-expand activate)
   (when (yas-expand)

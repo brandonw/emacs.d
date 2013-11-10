@@ -5,6 +5,9 @@
 
 (require-package 'haskell-mode)
 
+(require 'speedbar)
+(speedbar-add-supported-extension ".hs")
+
 (add-hook 'haskell-mode-hook 'haskell-mode-defaults)
 
 (defun haskell-mode-defaults ()

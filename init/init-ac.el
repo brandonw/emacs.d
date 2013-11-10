@@ -11,10 +11,6 @@
 (ac-flyspell-workaround)
 (ac-linum-workaround)
 
-(defadvice ac-expand (before advice-for-ac-expand activate)
-  (when (yas-expand)
-    (ac-stop)))
-
 (diminish 'auto-complete-mode)
 
 (provide 'init-ac)

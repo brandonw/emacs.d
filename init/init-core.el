@@ -16,6 +16,13 @@
 (show-paren-mode t)
 (turn-on-xclip)
 
+(global-set-key (kbd "RET") 'newline-and-indent)
+
+(add-hook 'local-write-file-hooks
+          (lambda ()
+            (delete-trailing-whitespace)
+            nil))
+
 (setq uniquify-buffer-name-style 'forward
       uniquify-separator "/"
       uniquify-after-kill-buffer-p t

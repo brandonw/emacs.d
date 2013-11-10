@@ -21,6 +21,11 @@
 (require 'init-projectile)
 
 (require 'lang-haskell)
+(require 'lang-c)
+(require 'lang-css)
+(require 'lang-web)
+(require 'lang-xml)
+(require 'lang-prog)
 
 (provide 'init.el)
 ;;; init.el ends here

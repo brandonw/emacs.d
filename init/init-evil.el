@@ -30,6 +30,7 @@
   "b" 'switch-to-buffer
   "w" 'create-or-switch-window
   "x" 'er/expand-region
+  "a" 'align-regexp
   "c" 'evilnc-comment-or-uncomment-lines)
 
 (defun minibuffer-keyboard-quit ()

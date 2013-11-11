@@ -4,3 +4,4 @@ elpa
 places
 projectile-bookmarks.eld
 flycheck-*
+.mc-lists.el

@@ -20,6 +20,7 @@
 (require 'init-flycheck)
 (require 'init-projectile)
 (require 'init-smartparens)
+(require 'init-multiple-cursors)
 
 (require 'lang-haskell)
 (require 'lang-c)

@@ -4,13 +4,16 @@
 ;;; Code:
 
 (require-package 'haskell-mode)
+(require-package 'ghc)
 
+(require 'ghc)
 (require 'speedbar)
 (speedbar-add-supported-extension ".hs")
 
 (add-hook 'haskell-mode-hook 'haskell-mode-defaults)
 
 (defun haskell-mode-defaults ()
+  (add-to-list 'ac-sources 'ac-source-ghc-mod)
   (turn-on-haskell-doc-mode)
   (turn-on-haskell-indentation)
   (evil-leader/set-key

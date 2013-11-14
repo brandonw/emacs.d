@@ -17,6 +17,8 @@
   (add-to-list 'ac-sources 'ac-source-ghc-mod)
   (turn-on-haskell-doc-mode)
   (turn-on-haskell-indentation)
+  (diminish 'haskell-indentation-mode)
+  (diminish 'haskell-doc-mode)
   (evil-leader/set-key
     "l" 'inferior-haskell-load-file
     "r" 'inferior-haskell-reload-file

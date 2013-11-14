@@ -39,7 +39,12 @@
 (setq-default save-place t
               indent-tabs-mode nil)
 
+(defun core-defaults ()
+  (diminish 'server-mode))
+
 (diminish 'undo-tree-mode)
+
+(add-hook 'server-visit-hook 'core-defaults)
 
 (provide 'init-core)
 ;;; init-core.el ends here

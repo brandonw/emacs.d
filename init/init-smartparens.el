@@ -10,5 +10,7 @@
 (add-to-list 'sp-ignore-modes-list 'nxml-mode)
 (smartparens-global-mode t)
 
+(diminish 'smartparens-mode)
+
 (provide 'init-smartparens)
 ;;; init-smartparens.el ends here

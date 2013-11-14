@@ -27,7 +27,10 @@
   (setq web-mode-markup-indent-offset 4
         web-mode-css-indent-offset 2
         web-mode-code-indent-offset 4
-        web-mode-disable-autocompletion t))
+        web-mode-disable-autocompletion t)
+  (evil-leader/set-key
+    "c" 'web-mode-toggle-comments
+    "z" 'web-mode-fold-or-unfold))
 
 (add-hook 'web-mode-hook 'web-mode-defaults)
 

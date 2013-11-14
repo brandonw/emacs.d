@@ -8,6 +8,7 @@
 
 (require 'ghc)
 (require 'speedbar)
+(require 'auto-complete)
 (speedbar-add-supported-extension ".hs")
 
 (add-hook 'haskell-mode-hook 'haskell-mode-defaults)

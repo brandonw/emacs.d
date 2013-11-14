@@ -6,6 +6,8 @@
 (require-package 'web-mode)
 
 (require 'web-mode)
+(require 'evil-leader)
+(require 'yasnippet)
 
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))

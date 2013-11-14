@@ -23,6 +23,7 @@
 (evil-define-key 'normal web-mode-map "%" 'web-mode-tag-match)
 
 (defun web-mode-defaults ()
+  (yas-activate-extra-mode 'html-mode)
   (setq web-mode-markup-indent-offset 4
         web-mode-css-indent-offset 2
         web-mode-code-indent-offset 4

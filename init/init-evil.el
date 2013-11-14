@@ -17,6 +17,9 @@
 (require 'evil-leader)
 (require 'evil-visualstar)
 (require 'evil)
+
+(global-surround-mode 1)
+(global-evil-leader-mode)
 (evil-mode t)
 
 (evil-leader/set-key
@@ -56,9 +59,6 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 ;;; space enters command mode
 (define-key evil-normal-state-map " " 'evil-ex)
-
-(global-surround-mode 1)
-(global-evil-leader-mode)
 
 (provide 'init-evil)
 ;;; init-evil.el ends here

@@ -6,6 +6,8 @@
 (require-package 'smartparens)
 
 (require 'smartparens-config)
+
+(add-to-list 'sp-ignore-modes-list 'nxml-mode)
 (smartparens-global-mode t)
 
 (provide 'init-smartparens)

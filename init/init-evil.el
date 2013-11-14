@@ -7,12 +7,7 @@
 (require-package 'surround)
 (require-package 'evil-nerd-commenter)
 (require-package 'evil-leader)
-(require-package 'evil-matchit)
 (require-package 'evil-visualstar)
-
-;;; prevent evilmi from binding default keys
-(defun evilmi-customize-keybinding ()
-  "Existence of this method bypasses setup of default evil-mi key-bindings.")
 
 (setq evil-search-module 'evil-search
       evil-want-C-u-scroll t
@@ -20,7 +15,6 @@
 
 (require 'surround)
 (require 'evil-leader)
-(require 'evil-matchit)
 (require 'evil-visualstar)
 (require 'evil)
 (evil-mode t)
@@ -63,12 +57,8 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 ;;; space enters command mode
 (define-key evil-normal-state-map " " 'evil-ex)
 
-;;; matchit
-(evil-define-key 'normal evil-matchit-mode-map "%" 'evilmi-jump-items)
-
 (global-surround-mode 1)
 (global-evil-leader-mode)
-(global-evil-matchit-mode 1)
 
 (provide 'init-evil)
 ;;; init-evil.el ends here

@@ -17,6 +17,9 @@
 (add-to-list 'auto-mode-alist
 '("/\\(views\\|html\\|theme\\|templates\\)/.*\\.php\\'" . web-mode))
 
+(evil-define-key 'visual web-mode-map "%" 'web-mode-tag-match)
+(evil-define-key 'normal web-mode-map "%" 'web-mode-tag-match)
+
 (defun web-mode-defaults ()
   (setq web-mode-markup-indent-offset 4
         web-mode-css-indent-offset 2

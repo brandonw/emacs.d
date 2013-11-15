@@ -20,12 +20,15 @@
 (flx-ido-mode 1)
 (smex-initialize)
 (iswitchb-mode 1)
+(speedbar-change-initial-expansion-list "quick buffers")
 
 (setq ido-use-faces nil
       ido-enable-flex-matching t
       gc-cons-threshold 50000000
       sr-speedbar-right-side nil
-      sr-speedbar-width-console 50)
+      sr-speedbar-width 45
+      sr-speedbar-width-x 45
+      sr-speedbar-width-console 45)
 
 (global-set-key "\M- " 'hippie-expand)
 (global-set-key (kbd "C-x C-b") 'ibuffer)

@@ -19,7 +19,7 @@
 (require 'init-flyspell)
 (require 'init-flycheck)
 (require 'init-projectile)
-(require 'init-smartparens)
+;; (require 'init-smartparens)
 (require 'init-multiple-cursors)
 
 (require 'lang-haskell)

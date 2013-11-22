@@ -11,6 +11,7 @@
 
 (setq evil-search-module 'evil-search
       evil-want-C-u-scroll t
+      evil-want-fine-undo t
       evil-want-C-w-in-emacs-state t)
 
 (require 'surround)

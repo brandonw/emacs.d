@@ -18,6 +18,7 @@
 (require 'evil-leader)
 (require 'evil-visualstar)
 (require 'evil)
+(require 'flycheck)
 
 (global-surround-mode 1)
 (global-evil-leader-mode)
@@ -29,6 +30,8 @@
   "w" 'create-or-switch-window
   "x" 'er/expand-region
   "a" 'align-regexp
+  "n" 'flycheck-next-error
+  "s" 'evil-ex-nohighlight
   "c" 'evilnc-comment-or-uncomment-lines)
 
 (defun minibuffer-keyboard-quit ()

@@ -22,7 +22,7 @@
   (evil-leader/set-key
     "l" 'inferior-haskell-load-file
     "r" 'inferior-haskell-reload-file
-    "s" 'switch-to-haskell
+    ;; "s" 'switch-to-haskell
     "i" 'inferior-haskell-info
     "t" 'inferior-haskell-type
     "d" 'inferior-haskell-find-definition

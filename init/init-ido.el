@@ -35,5 +35,10 @@
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "<f9>") 'sr-speedbar-toggle)
 
+(defadvice find-tag (before load-etags activate)
+  "Reload tags if not loaded."
+  (if (not (or tags-file-name tags-table-list))
+      (visit-tags-table default-directory nil)))
+
 (provide 'init-ido)
 ;;; init-ido.el ends here

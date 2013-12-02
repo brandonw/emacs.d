@@ -7,9 +7,12 @@
 
 (require 'smartparens-config)
 
-(setq sp-highlight-pair-overlay nil
-      sp-highlight-wrap-overlay nil
-      sp-highlight-wrap-tag-overlay nil)
+(setq sp-autoescape-string-quote nil
+      sp-show-pair-delay 0
+      sp-show-pair-from-inside t)
+      ;; sp-highlight-pair-overlay nil
+      ;; sp-highlight-wrap-overlay nil
+      ;; sp-highlight-wrap-tag-overlay nil)
 
 (add-to-list 'sp-ignore-modes-list 'nxml-mode)
 (smartparens-global-mode t)

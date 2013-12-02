@@ -9,7 +9,6 @@
 
 (add-to-list 'yas-snippet-dirs "~/.haskell-mode-snippets")
 (setq-default yas-prompt-functions '(yas-ido-prompt yas-dropdown-prompt))
-(setq yas-fallback-behavior 'return-nil)
 
 (yas-global-mode t)
 

@@ -15,6 +15,7 @@
 
 (defun haskell-mode-defaults ()
   (add-to-list 'ac-sources 'ac-source-ghc-mod)
+  (add-to-list 'ac-sources 'ac-source-yasnippet)
   (turn-on-haskell-doc-mode)
   (turn-on-haskell-indentation)
   (diminish 'haskell-indentation-mode)

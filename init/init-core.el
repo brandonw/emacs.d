@@ -6,6 +6,7 @@
 (require-package 'expand-region)
 (require-package 'diminish)
 (require-package 'xclip)
+(require-package 'ag)
 
 (require 'uniquify)
 (require 'xclip)

@@ -7,6 +7,12 @@
 (add-to-list 'load-path (concat user-emacs-directory "lang"))
 (add-to-list 'load-path (concat user-emacs-directory "elisp"))
 
+(defmacro after (feature &rest body)
+  "After FEATURE is loaded, evaluate BODY."
+  (declare (indent defun))
+  `(eval-after-load ,feature
+     '(progn ,@body)))
+
 (require 'init-setup)
 (require 'init-core)
 (require 'init-evil)

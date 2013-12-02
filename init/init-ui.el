@@ -7,6 +7,7 @@
 (require-package 'solarized-theme)
 
 (require 'powerline)
+(require 'cl)
 
 (menu-bar-mode -1)
 (setq inhibit-startup-screen t

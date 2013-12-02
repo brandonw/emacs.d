@@ -7,6 +7,7 @@
 (require-package 'smex)
 (require-package 'sr-speedbar)
 (require-package 'ido-vertical-mode)
+(require-package 'ido-ubiquitous)
 
 (require 'ido)
 (require 'flx-ido)
@@ -16,10 +17,10 @@
 
 (ido-mode 1)
 (ido-vertical-mode)
+(ido-ubiquitous-mode t)
 (ido-everywhere 1)
 (flx-ido-mode 1)
 (smex-initialize)
-(iswitchb-mode 1)
 (speedbar-change-initial-expansion-list "quick buffers")
 
 (setq ido-use-faces nil
@@ -29,9 +30,9 @@
       sr-speedbar-width 45
       sr-speedbar-width-x 45
       sr-speedbar-width-console 45)
+(add-to-list 'ido-ignore-buffers "\\*")
 
 (global-set-key "\M- " 'hippie-expand)
-(global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "<f9>") 'sr-speedbar-toggle)
 

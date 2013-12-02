@@ -16,6 +16,7 @@
 
 (show-paren-mode t)
 (turn-on-xclip)
+(global-undo-tree-mode)
 
 ;(global-set-key (kbd "RET") 'newline-and-indent)
 

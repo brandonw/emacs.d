@@ -24,6 +24,10 @@
 (global-evil-leader-mode)
 (evil-mode t)
 
+;;; Define which major modes should start in the emacs evil mode.
+(dolist (mode '())
+  (evil-set-initial-state mode 'emacs))
+
 (evil-leader/set-key
   "e" 'find-file
   "b" 'switch-to-buffer

@@ -7,6 +7,7 @@
 (require-package 'diminish)
 (require-package 'xclip)
 (require-package 'ag)
+(require-package 'undo-tree)
 
 (require 'uniquify)
 (require 'xclip)

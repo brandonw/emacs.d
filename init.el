@@ -15,6 +15,7 @@
 
 (require 'init-setup)
 (require 'init-core)
+(require 'init-flycheck)
 (require 'init-evil)
 (require 'init-linum)
 (require 'init-ui)
@@ -23,7 +24,6 @@
 (require 'init-ac)
 (require 'init-git)
 (require 'init-flyspell)
-(require 'init-flycheck)
 (require 'init-projectile)
 (require 'init-smartparens)
 (require 'init-multiple-cursors)
